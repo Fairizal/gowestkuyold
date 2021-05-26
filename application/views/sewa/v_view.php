@@ -98,6 +98,7 @@
                 </div>
                 <div>
                     <a href="<?= base_url('sewa')?>" class="btn btn-alt-light" id="back">Kembali</a>
+                    <a href="<?= base_url('sewa/kembali/') . $dataSewa[0]->id ?>" class="btn btn-primary" id="back">Pengembalian</a>
                 </div>
             </form>
         </div>

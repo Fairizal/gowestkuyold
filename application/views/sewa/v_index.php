@@ -30,7 +30,7 @@
                         <th>Lama Pinjam</th>
                         <th>Pelanggan</th>
                         <th>Status</th>
-                        <th style="width: 12%;">Aksi</th>
+                        <th style="width: 10%;">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,12 +47,11 @@
                             <td class="font-w400 font-size-sm"><?php echo $sewa->isback ? 'Dikembalikan' : 'Dipinjam' ?></td>
                             <td>
                                 <?php if($sewa->isback){?>
-                                    <span><a href="<?= base_url('sewa/kembali/') . $sewa->id ?>" style="color: black"><i class="fa fa-reply"></i></a></span>
+                                    <span><a href="<?= base_url('sewa/kembali/') . $sewa->id ?>" style="color: black"><i class="far fa-eye"></i></a></span>
                                 <?php } else {?>
                                     <span><a href="<?= base_url('sewa/view/') . $sewa->id ?>" style="color: black"><i class="far fa-eye"></i></a></span>
                                     <span><a href="<?= base_url('sewa/update/') . $sewa->id ?>" style="color: black"><i class="far fa-edit"></i></a></span>
                                     <span><a onclick="$.fn.delete(<?=$sewa->id ?>)" style="cursor: pointer"><i class="far fa-trash-alt"></i></a></span>
-                                    <span><a href="<?= base_url('sewa/kembali/') . $sewa->id ?>" style="color: black"><i class="fa fa-reply"></i></a></span>
                                 <?php }?>
                             </td>
                         </tr>
